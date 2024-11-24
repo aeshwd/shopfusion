@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="product-header">
+        <div class="header-left">
+            
+        </div>
+        <div class="header-right">
+            <a href="cart.html" class="cart-link">
+                <img src="images/cart.png" id="cart-icon" alt="Cart">
+                <span id="cart-number">0</span>
+            </a>
+        </div>
+    </header>
+    
+
+    <!-- Main Content -->
+    <main>
+        <!-- Product Image Section -->
+        <section id="product-images">
+            <img id="main-image" alt="Main Product Image">
+            <div id="thumbnails"></div>
+        </section>
+
+        <!-- Product Details Section -->
+        <section id="product-details">
+            <h1 id="product-name"></h1>
+            <p id="product-price"></p>
+            <p id="product-description"></p>
+            <div>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" min="1" value="1">
+            </div>
+            <button id="add-to-cart" style="margin-top: 40px;">Add to Cart</button>
+        </section>
+    </main>
+
+    <script src="product-details.js"></script>
+</body>
+</html>
